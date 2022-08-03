@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@vitalets/google-translate-api": "^8.0.0",
+    "tmi.js-reply-fork": "^1.8.5"
+  },
+  "devDependencies": {
+    "@types/google-translate-api": "^2.3.2"
+  }
+}

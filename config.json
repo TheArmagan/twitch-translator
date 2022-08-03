@@ -1,0 +1,22 @@
+{
+  "account": {
+    "username": "matchifyorg",
+    "oauth": ""
+  },
+  "channels": ["matchifyorg"],
+  "message": {
+    "match": {
+      "pattern": "^(?!-).+$",
+      "flags": "gmi"
+    },
+    "replace": {
+      "pattern": "^-",
+      "flags": "gmi"
+    },
+    "format": "- {from} > {to}: {text}"
+  },
+  "translation": {
+    "from": "auto",
+    "to": "tr"
+  }
+}
