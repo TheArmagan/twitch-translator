@@ -17,6 +17,7 @@
   },
   "translation": {
     "from": "auto",
-    "to": "tr"
+    "to": "tr",
+    "ignoreSame": true
   }
 }

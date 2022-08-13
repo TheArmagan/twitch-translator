@@ -21,9 +21,14 @@ client.on("message", async (channel, user, message, self) => {
     to: config.translation.to.toLowerCase()
   });
 
+  let FROM = translated.from.language.iso.toUpperCase();
+  let TO = config.translation.to.toUpperCase();
+
+  if (config.translation.ignoreSame && FROM == TO) return;
+
   let formatted = config.message.format
-    .replace("{from}", translated.from.language.iso.toUpperCase())
-    .replace("{to}", config.translation.to.toUpperCase())
+    .replace("{from}", FROM)
+    .replace("{to}", TO)
     .replace("{text}", translated.text);
 
   client.reply(channel, formatted, user);
